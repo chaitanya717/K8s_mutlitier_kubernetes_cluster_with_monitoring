@@ -6,7 +6,7 @@ metadata:
   name: springapp
   namespace: multitier
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: springapp
@@ -16,7 +16,7 @@ spec:
         app: springapp
     spec:
       containers:
-      - image: "381492261524.dkr.ecr.eu-west-1.amazonaws.com/springapp"
+      - image: "381492261524.dkr.ecr.eu-west-1.amazonaws.com/springapp:latest"
         name: springapp
         ports:
         - containerPort: 6868
