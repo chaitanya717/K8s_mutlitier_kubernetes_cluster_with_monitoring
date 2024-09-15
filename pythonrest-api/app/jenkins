@@ -25,7 +25,7 @@ pipeline {
         
         stage("Build") {
             steps {
-                dir('python-postgresql-rest-api/app') {
+                dir('pythonrest-api/app') {
                     script {
                         sh """
                             ls
