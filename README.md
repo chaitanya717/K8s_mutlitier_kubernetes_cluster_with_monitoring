@@ -1,4 +1,4 @@
-# K8s Kind Voting App
+# K8s Kind redis App
 
 A comprehensive guide for setting up a Kubernetes cluster using Kind on an AWS EC2 instance, installing and configuring Argo CD, and deploying applications using Argo CD.
 
@@ -22,12 +22,6 @@ This guide covers the steps to:
 
 ![Grafana diagram](grafana.png)
 ![Prometheus diagram](prometheus.png)
-
-* A front-end web app in [Python](/vote) which lets you vote between two options
-* A [Redis](https://hub.docker.com/_/redis/) which collects new votes
-* A [.NET](/worker/) worker which consumes votes and stores them in…
-* A [Postgres](https://hub.docker.com/_/postgres/) database backed by a Docker volume
-* A [Node.js](/result) web app which shows the results of the voting in real time
 
 
 
@@ -54,7 +48,4 @@ Utilized Argo CD for automated deployment pipelines, enhancing deployment effici
 Achieved seamless scaling and high availability, supporting 99.9% uptime for critical applications.
 This project description emphasizes your role in leveraging AWS EC2, Kubernetes, and Argo CD to optimize application deployment and management processes effectively.
 
-
-### Aapke DevOps Wale Bhaiya
-### [TrainWithShubham](https://www.trainwithshubham.com/)
 
