@@ -35,7 +35,7 @@ services:
       - .:/app
 
   pythonapp:
-    build: ./python-postgresql-rest-api/app
+    build: ./python-api/app
     container_name: python-app-container
     restart: unless-stopped
     depends_on:
