@@ -18,6 +18,8 @@ spec:
       containers:
       - image: "381492261524.dkr.ecr.eu-west-1.amazonaws.com/springapp:latest"
         name: springapp
+      imagePullSecrets:
+      - name: ecr-secret  
         ports:
         - containerPort: 6868
           name: springapp
