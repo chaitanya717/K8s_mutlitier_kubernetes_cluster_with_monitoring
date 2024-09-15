@@ -4,7 +4,7 @@ metadata:
   labels:
     app: db
   name: db
-  namespace: appredis
+  namespace: multitier
 spec:
   replicas: 1
   selector:

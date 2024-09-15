@@ -4,14 +4,14 @@ metadata:
   labels:
     app: springapp
   name: springapp
-  namespace: appredis
+  namespace: multitier
 spec:
   type: NodePort
   ports:
   - name: "springapp-service"
     port: 6868
     targetPort: 80
-    nodePort: 31003
+    nodePort: 31004
   selector:
     app: springapp
   

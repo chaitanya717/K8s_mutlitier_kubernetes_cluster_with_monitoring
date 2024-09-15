@@ -9,9 +9,9 @@ spec:
   type: NodePort
   ports:
   - name: "app-service"
-    port: 3000
+    port: 5000
     targetPort: 80
-    nodePort: 31002
+    nodePort: 31003
   selector:
     app: app
   
